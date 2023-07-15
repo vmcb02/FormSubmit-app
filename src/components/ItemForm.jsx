@@ -1,5 +1,6 @@
+import { ButtonForm } from "./ButtonForm";
 
-export const ItemForm = ({ onInputChange, name, email, phone }) => {
+export const ItemForm = ({ onInputChange, name, email, phone, onFormValid }) => {
  
   return (
     <>
@@ -20,6 +21,10 @@ export const ItemForm = ({ onInputChange, name, email, phone }) => {
            value={phone}
            placeholder="Teléfono"
            onChange={ onInputChange } />
+
+<ButtonForm
+   onFormValid={ onFormValid }
+   />
     </>
   )
 }

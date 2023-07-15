@@ -1,4 +1,5 @@
-import { FormContainer } from "./FormContainer"
+import { FormContainer } from "./components/FormContainer";
+
 
 export const App = () => {
   return (
